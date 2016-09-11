@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DeeplyLearned</title>
+    <description>This is personal website of Sameer Singh</description>
+    <link>http://deeplylearned.github.io/</link>
+    <atom:link href="http://deeplylearned.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 11 Sep 2016 19:53:10 +0530</pubDate>
+    <lastBuildDate>Sun, 11 Sep 2016 19:53:10 +0530</lastBuildDate>
+    <generator>Jekyll v3.0.1</generator>
+    
+  </channel>
+</rss>
