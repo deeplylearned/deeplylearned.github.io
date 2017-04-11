@@ -1,87 +1,39 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+#Created by webjeda - http://webjeda.com
 
 # Site settings
-title: DeeplyLearned
-name: Sameer Singh
+title: "Sameer Singh"
+title-font-size: '4em' # a provision to adjust the size of your title. If it is too long then do resize to a smaller value. By default it will be 4em.
+
 email: isameer7@outlook.com
-location: Jabalpur, India
-company: IIIT Jabalpur
-company_url: 
-github_url: https://github.com/deeplylearned
-description: This is personal website of Sameer Singh
-favicon: favicon.png # Image must be in assets/images
+description: > # this means to ignore newlines until "baseurl:"
+  This is Sameer's personal blog.
+baseurl: "/blog" # the subpath of your site, e.g. /blog
+url: "http://deeplylearned.github.com" # the base hostname & protocol for your site
 
-url: http://deeplylearned.github.io # the base hostname & protocol for your site
-
-## Gem
-gems:
-  - jekyll-paginate
-  - jekyll-geo-pattern
-  - rouge
-  - kramdown
-  - jekyll-github-metadata
+permalink: :title/
 
 # Build settings
 markdown: kramdown
-highlighter: rouge
-lsi:         false
-excerpt_separator: "\n\n"
-
-source:      .
-destination: ./_site
-
-quiet:    false
-defaults: []
-
-kramdown:
-  input: GFM
-  enable_coderay: true
-
-# Disque
-disque: #httpdongchuangithubio.disqus.com
-
-# Pagination
-paginate: 10
-paginate_path: 'page:num'
-
-# Navigation
-navs:
-  -
-    href: /
-    label: Home
-
-  -
-    href: /projects
-    label: Projects
-
-  -
-    href: /blog
-    label: Blog
-
-  -
-    href: /notes
-    label: Notes
-
-  -
-    href: /about
-    label: About
-
-# Sidebar to show popular repo
-side_bar_repo_limit: 5 # Number of repos to show
-
-# Google Analytics
-analytics :
-  provider : google
-  google :
-      tracking_id : 'UA-72165600-1'
+highlight: rouge
+paginate: 5
+paginate_path: /page:num/
 
 
-# For about.html. Fell free to create your own!
-skill_software_keywords: [C, C++,Python, MySQL, Oracle]
-skill_j2ee_keywords: [Spring, Struct, Hibernet, MyBatis, JSP]
-skill_web_keywords: [HTML, CSS, JS, JQuery, Ajax, AngularJS, NodeJS, ExpressJS, MongoDB, Redis, PHP, Symfony, Boostrap]
+# Tracker
+analytics: UA-97080850-1
+
+# Comments
+disqus-shortname: webjeda-demo
+
+# Contact form
+# Go to https://getsimpleform.com and get a API token by signing up with your email and enter that here
+api-token:   
+
+#CSS
+sass:
+  style: compressed
+
+
+include: [_pages]
+
+gems: [jekyll-paginate, jekyll-seo-tag]
